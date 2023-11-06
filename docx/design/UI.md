@@ -1,34 +1,43 @@
-## ログイン画面
-<img src="image\login.jpg">
+# UI
 
-## コース選択画面
+## #admin画面
+<img src="./image/admin画面.png">
 
-<img src="image\course-library.jpg">
+## #アカウント作成
+<img src="./image/アカウント作成.png">
 
-## ホーム画面
+## #マイページ
+<img src="./image/マイページ.png">
 
-<img src="image\home.jpg">
+## #ログイン
+<img src="./image/ログイン.png">
 
-## 問題画面
+## #間違えた問題
+<img src="./image/間違えた問題.png">
 
-<img src="image/quesition.jpg">
+## #採点正解_閉じた
+<img src="./image/採点正解_閉じた.png">
 
-## テスト画面
+## #採点正解
+<img src="./image/採点正解.png">
 
-<img src="image\test.jpg">
+## #採点中
+<img src="./image/採点中.png">
 
-## メニュー画面
+## #採点不正解
+<img src="./image/採点不正解.png">
 
-<img src="image\menu.jpg">
+## #振り返り画面
+<img src="./image/振り返り画面.png">
 
-## クリア画面
+## #説明画面
+<img src="./image/説明画面.png">
 
-<img src="image\clear.jpg">
+## #単元選択画面
+<img src="./image/単元選択画面.png">
 
-## アンクリア画面
+## #問題画面
+<img src="./image/問題画面.png">
 
-<img src="image\unclear.jpg">
-
-## showボタンを押したとき
-
-<img src="image\anwershow.jpg">
+## #問題選択サイドバー
+<img src="./image/問題選択サイドバー.png">
