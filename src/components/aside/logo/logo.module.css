@@ -1,13 +1,12 @@
 /* LOGO */
-aside .logo {
+.logo {
     display: flex;
     margin-top: 1.4rem;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-aside .logo img {
+.logo img {
     cursor: pointer;
     width: 2.8rem;
     height: 2.8rem;

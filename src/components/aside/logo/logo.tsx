@@ -1,7 +1,8 @@
+import LogoStyle from './logo.module.css';
 function Logo() {
     return (
-      <div className="logo">
-        <img src="./images/logo.png" alt=""></img>
+      <div className={LogoStyle.logo}>
+        <img src="/logo.png" alt=""></img>
       </div>
     );
   }

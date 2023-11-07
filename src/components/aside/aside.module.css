@@ -1,6 +1,6 @@
 /* ASIDE */
 
-aside {
+.aside {
     height: 100vh;
     background: var(--color-dark);
     color: var(--color-white);

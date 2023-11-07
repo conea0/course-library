@@ -1,4 +1,7 @@
 /* おそらくglobals.cssへ記述すべきものだと思います */
+@import url('https://unpkg.com/ress/dist/ress.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
 
 /* ROOT VALUES */
 :root {
