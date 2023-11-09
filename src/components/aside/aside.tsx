@@ -1,8 +1,8 @@
-import Logo from "@/components/aside/logo/logo";
-import Sidebar from "@/components/aside/sidebar/sidebar";
+import {Logo} from "@/components/aside/logo/logo";
+import {Sidebar} from "@/components/aside/sidebar/sidebar";
 import AsideStyle from './aside.module.css';
 
-const Aside = ()  => {
+export const Aside = ()  => {
     return (
         <aside className={AsideStyle.aside}>
             <Logo />
@@ -10,4 +10,3 @@ const Aside = ()  => {
         </aside>
     )
 }
-export default Aside;

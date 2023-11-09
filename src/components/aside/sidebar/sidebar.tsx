@@ -6,7 +6,7 @@ import SettingImage from '/public/imags/settings-w.svg';
 import AccountImage from '/public/imags/account-w.svg';
 import ProblemImage from '/public/imags/view_list-w.svg';
 
-function Sidebar() {
+export const Sidebar = () => {
     return (
         <div className={SidebarStyle.sidebar}>
             <a href="#">
@@ -32,5 +32,3 @@ function Sidebar() {
         </div>
     );
   }
-
-export default Sidebar;

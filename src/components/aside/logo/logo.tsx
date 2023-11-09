@@ -2,7 +2,7 @@ import Image from 'next/image'
 import LogoStyle from './logo.module.css';
 import LogoImage from '/public/imags/logo.png';
 
-function Logo() {
+export const Logo = () => {
     return (
       <div className={LogoStyle.logo}>
         <Image
@@ -13,4 +13,3 @@ function Logo() {
     );
   }
   
-export default Logo;
