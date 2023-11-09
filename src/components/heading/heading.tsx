@@ -1,7 +1,7 @@
 import HeadingStyle from './heading.module.css';
 import {ReactNode} from "react";
 
-const Heading = ({children, subtitle}: {children: ReactNode, subtitle: string}) => {
+export const Heading = ({children, subtitle}: {children: ReactNode, subtitle: string}) => {
     return (
         <div className={HeadingStyle.wrapper}>
             <p className={HeadingStyle.subtitle}>{subtitle}</p>
@@ -9,4 +9,3 @@ const Heading = ({children, subtitle}: {children: ReactNode, subtitle: string}) 
         </div>
     )
 }
-export default Heading;
