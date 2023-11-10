@@ -1,0 +1,9 @@
+/* ASIDE */
+
+.aside {
+    height: 100vh;
+    background: var(--color-dark);
+    color: var(--color-white);
+    position: fixed;
+    width: 90px;
+}
