@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ProblemCard } from '@/components/problem-cardbox/problem-cardbox'
+import { ProblemCard } from '@/components/markdownBox/markdownBox'
 
 export default function Home() {
   return (

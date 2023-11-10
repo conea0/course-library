@@ -1,0 +1,23 @@
+statement: |2+
+
+  nameに自分の名前を代入して、`hello (自分の名前)` を出力してください。
+
+  ### inputの方法
+  いかのコードを利用してよい。
+  ```python
+  a = input()
+  ```
+
+testcase:
+  tests:
+  - input:
+    - shuya
+    output: |
+      hello shuya
+  - input:
+    - taro
+    output: |
+      hello taro
+code: |
+  name = input()
+  print("hello " + name)

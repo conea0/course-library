@@ -1,10 +1,10 @@
 export type problem = {
-	text:string,
+	statement:string,
 	testcase:Testcase,
 	code:string,
 }
 
 export type Testcase = {
     input: string[],
-	output: string[],
+	output: string,
 }
