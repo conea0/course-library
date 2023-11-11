@@ -11,7 +11,7 @@ export const LoginForm = () => {
   return (
     <div className={LoginStyle.login}>
       <h1 className={LoginStyle.company}>CONEA</h1>
-      <h3 className={LoginStyle.appName}>programming</h3>
+      <h3 className={LoginStyle.appName}>Course - Library</h3>
       <Form name="login-form" onFinish={onFinish} className={LoginStyle.loginForm}>
         <Form.Item
           name="username"
