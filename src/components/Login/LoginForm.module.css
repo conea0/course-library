@@ -1,18 +1,22 @@
+.login {
+  padding-top: 25vh;
+}
+
 .company {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0;
   padding: 0;
-  color: #1f2525; 
+  color: #1f2525;
+  text-align: center;
 }
 
 .appName {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin-top: 0;
   margin-bottom: 50px;
   padding: 0;
-  color: #434c4c; 
+  color: #434c4c;
+  text-align: center;
 }
 
 .loginForm {
