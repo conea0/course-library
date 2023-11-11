@@ -2,7 +2,7 @@
 import { Form, Input, Button } from "antd";
 import style from './LoginForm.module.css'
 
-const LoginForm = () => {
+export const LoginForm = () => {
   const onFinish = (values: any) => {
     console.log("Received values:", values);
     // ログインロジックをここに実装
@@ -34,5 +34,3 @@ const LoginForm = () => {
     </div>
   );
 };
-
-export default LoginForm;
