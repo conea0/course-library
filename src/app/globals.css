@@ -1,45 +1,15 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
+/* IMPORT */
 @import url('https://unpkg.com/ress/dist/ress.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
 
 /* ROOT VALUES */
 :root {
-    --color-white: #fff;
-    --color-info-dark: #434C4C;
-    --color-dark: #2E3838;
     --color-dark-variant: #1f2525;
+    --color-dark: #2E3838;
+    --color-info-dark: #434C4C;
     --color-shadow: #2e38382a;
-    --color-card-background: #2e38381a;
+    --color-white: #fff;
 
-    --color-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
     --border-radius-3: 1.2rem;
@@ -88,12 +58,11 @@ img {
 
 h1 {
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
 }
 
 h2 {
-    font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 h3 {
@@ -102,6 +71,14 @@ h3 {
 
 h4 {
     font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+small {
+    font-size: 0.75rem;
 }
 
 h5 {
