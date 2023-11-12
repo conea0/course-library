@@ -7,8 +7,8 @@
     --color-dark-variant: #1f2525;
     --color-dark: #2E3838;
     --color-info-dark: #434C4C;
-    --color-white: #fff;
     --color-shadow: #2e38382a;
+    --color-white: #fff;
 
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
@@ -71,6 +71,14 @@ h3 {
 
 h4 {
     font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+small {
+    font-size: 0.75rem;
 }
 
 h5 {
