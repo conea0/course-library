@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Aside />
-        <main className='ml-90'>
+        <main>
           {children}
         </main>
       </body>
