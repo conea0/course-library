@@ -2,8 +2,8 @@
   width: 500px;
   padding: 10px;
   margin: 30px;
-  background-color: #ffffff; 
-  color: #1F2525;
+  background-color: #ffffff;
+  color: #1f2525;
   text-align: left;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -15,7 +15,7 @@
 
 .listItem:hover,
 .listItem.clicked {
-  background-color: #2E3838;
+  background-color: #2e3838;
   color: #ffffff;
-  border-left: 10px solid #2E3838;
+  border-left: 10px solid #2e3838;
 }

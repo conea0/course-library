@@ -1,7 +1,7 @@
 //生徒の詳細情報を表示するページ
-'use client';
-import { FC, useState } from 'react';
-import { Student } from '../../../../types';
+"use client";
+import { FC, useState } from "react";
+import { Student } from "@/../../types";
 import styles from "./StudentDetailPage.module.css";
 
 interface StudentDetailPageProps {
@@ -18,7 +18,7 @@ const StudentDetailPage: FC<StudentDetailPageProps> = ({ student }) => {
 
   const handleSaveClick = () => {
     // データを保存するロジックをここに実装
-    console.log('編集した生徒情報を保存:', editedStudent);
+    console.log("編集した生徒情報を保存:", editedStudent);
     setIsEditing(false);
   };
 
@@ -69,7 +69,9 @@ const StudentDetailPage: FC<StudentDetailPageProps> = ({ student }) => {
         ) : (
           <div>
             <h2 className={styles.detailHeading}>{student.name} の詳細情報</h2>
-            <p className={styles.detailItem}>ユーザーネーム: {student.username}</p>
+            <p className={styles.detailItem}>
+              ユーザーネーム: {student.username}
+            </p>
             <p className={styles.detailItem}>連絡先: {student.contact}</p>
             {/* 他の詳細情報を表示 */}
             <button onClick={handleEditClick} className={styles.editButton}>

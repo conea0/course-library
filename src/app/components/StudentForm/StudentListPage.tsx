@@ -1,16 +1,16 @@
-'use client';
-import { FC, useState } from 'react';
-import StudentListItem from './StudentListItem';
-import StudentDetailPage from './StudentDetailPage';
-import StudentAddFormPage from './StudentAddFormPage';
-import { Student } from '../../../../types';
+"use client";
+import { FC, useState } from "react";
+import StudentListItem from "./StudentListItem";
+import StudentDetailPage from "./StudentDetailPage";
+import StudentAddFormPage from "./StudentAddFormPage";
+import { Student } from "../../../../types";
 import styles from "./StudentListPage.module.css";
 
 const studentsData: Student[] = [
-  { id: '1', name: 'John Doe', username: 'john_doe', contact: '123-456-7890' },
-  { id: '2', name: 'Jane Doe', username: 'jane_doe', contact: '987-654-3210' },
-  { id: '3', name: 'Abc Def', username: 'aaaaaaaaa', contact: '012-346-6789' },
-  { id: '4', name: 'Ghi Jkl', username: 'bbbbbbbbb', contact: '135-246-7890' },
+  { id: "1", name: "John Doe", username: "john_doe", contact: "123-456-7890" },
+  { id: "2", name: "Jane Doe", username: "jane_doe", contact: "987-654-3210" },
+  { id: "3", name: "Abc Def", username: "aaaaaaaaa", contact: "012-346-6789" },
+  { id: "4", name: "Ghi Jkl", username: "bbbbbbbbb", contact: "135-246-7890" },
   // 必要に応じて他の生徒を追加
 ];
 
@@ -26,7 +26,7 @@ const StudentListPage: FC = () => {
 
   const handleAddStudent = (newStudent: Student) => {
     // データベースに新しい生徒を追加するロジックを実装
-    console.log('新しい生徒を追加:', newStudent);
+    console.log("新しい生徒を追加:", newStudent);
   };
 
   return (

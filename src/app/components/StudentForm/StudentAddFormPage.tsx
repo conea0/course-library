@@ -1,8 +1,8 @@
 // 生徒情報の追加ページ
-'use client'
-import { FC } from 'react';
-import StudentForm from './StudentForm';
-import { Student } from '../../../../types';
+"use client";
+import { FC } from "react";
+import StudentForm from "./StudentForm";
+import { Student } from "@/../../types";
 import styles from "./StudentAddFormPage.module.css";
 
 interface StudentAddFormPageProps {
