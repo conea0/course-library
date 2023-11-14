@@ -5,6 +5,7 @@ import StudentListPage from "@/app/components/StudentForm/StudentListPage";
 export default function Home() {
   return (
     <div>
+      <LoginForm />
       <StudentListPage />
     </div>
   );
