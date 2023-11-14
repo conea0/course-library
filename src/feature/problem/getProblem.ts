@@ -3,22 +3,17 @@ import { readFileSync } from "fs";
 import { load } from "js-yaml";
 import { resolve } from "path"; 
 
-const example: problem = load(
-  readFileSync(resolve("src/feature/problem/problem.yaml"), "utf8")
-) as problem;
-const data = [
-  [
-    [
-      {
-        statement: example.statement,
-        testcase: example.testcase,
-        code: example.code,
-      },
-    ],
-  ],
-];
+const zeroPadding = (num: number, length: number): string => {
+  return num.toString().padStart(length, '0');
+}
+
 export const getProblem = (part: number, unit: number, id: number): problem => {
+  const outputProblem: problem = load(
+    readFileSync(resolve(
+      `src/feature/problem/${zeroPadding(part, 3)}_${zeroPadding(unit, 3)}_${zeroPadding(id, 3)}.yaml`
+      ),"utf8")
+    ) as problem;
     return(
-        data[part][unit][id]
+        outputProblem
     );
 }

@@ -1,17 +1,14 @@
 .cardbox {
-    margin: 3rem 0 2rem 0;
+    margin: 2rem 0;
     width: 80%;
-    padding: 1.5rem 1rem;
-    transition: all 0.3s ease;
-    opacity: 0.8;
-    box-shadow: var(--box-shadow);
-    border-top: 0.2rem var(--color-white) solid;
-    border-bottom: 0.2rem var(--color-white) solid;
+    padding: 1.5rem 2rem;
+    transition: all 0.4s ease;
+    box-shadow: 4rem 0 3rem var(--color-shadow),
+                -4rem 0 3rem var(--color-shadow);
+    opacity: 1;
 }
 
 .cardbox:hover {
+    opacity: 0.9;
     box-shadow: none;
-    opacity: 1;
-    border-top: 0.2em var(--color-shadow) solid;
-    border-bottom: 0.2rem var(--color-shadow) solid;
 }

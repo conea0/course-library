@@ -7,7 +7,7 @@
     --color-dark-variant: #1f2525;
     --color-dark: #2E3838;
     --color-info-dark: #434C4C;
-    --color-shadow: #2e38382a;
+    --color-shadow: #2e383816;
     --color-white: #fff;
 
     --border-radius-1: 0.4rem;
@@ -48,6 +48,8 @@ body {
 
 main {
     padding: 40px 100px 0 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 a {
@@ -90,4 +92,14 @@ h5 {
 
 small {
     font-size: 0.75rem;
+}
+
+#editor {
+    width: 100%;
+    height: 100%;
+}
+
+#ace_editor {
+    width: 100%;
+    height: 100%;
 }
