@@ -1,0 +1,26 @@
+.formContainer {
+  background-color: #ffffff;  
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.label {
+  color: #1F2525;  /* ラベルの色をディープなグリーンに変更 */
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.button {
+  background-color: #1F2525;  /* ボタンの背景色をディープなグリーンに変更 */
+  color: #ffffff;  /* テキストの色も変更 */
+}
+
+.button:hover {
+  background-color: #2E3838;  /* ボタンにホバー時の背景色を設定 */
+}

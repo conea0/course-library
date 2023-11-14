@@ -1,0 +1,69 @@
+.detailContainer {
+    width: 600px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailHeading {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color:#1F2525;
+  }
+  
+  .detailItem {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color:#1F2525;
+  }
+
+  .heading{
+    padding: 8px;
+    margin: 30px;
+    font-size: 18px;
+    background-color: #2E3838;
+    color: #ffffff;
+    border-left: 10px solid #2E3838;
+    font-weight: bold;
+  }
+
+.editForm {
+  width: 600px;
+  background-color: #ffffff;
+  color: #1F2525;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editHeading {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.editItem {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.editButton {
+  background-color: #434C4C;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.editButton:hover {
+  background-color: #2E3838;
+}
