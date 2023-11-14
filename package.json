@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write src",
     "fix": "npm run format && npm run lint",
-    "prepare": "husky intall"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.8.10",
