@@ -1,93 +1,93 @@
 /* IMPORT */
-@import url("https://unpkg.com/ress/dist/ress.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://unpkg.com/ress/dist/ress.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* ROOT VALUES */
 :root {
-  --color-dark-variant: #1f2525;
-  --color-dark: #2e3838;
-  --color-info-dark: #434c4c;
-  --color-shadow: #2e38382a;
-  --color-white: #fff;
+    --color-dark-variant: #1f2525;
+    --color-dark: #2E3838;
+    --color-info-dark: #434C4C;
+    --color-shadow: #2e38382a;
+    --color-white: #fff;
 
-  --border-radius-1: 0.4rem;
-  --border-radius-2: 0.8rem;
-  --border-radius-3: 1.2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
 
-  --card-padding: 1.8rem;
-  --card-border-radius: 30px;
+    --card-padding: 1.8rem;
+    --card-border-radius: 30px;
 
-  --box-shadow: 0 1rem 2rem var(--color-shadow);
+    --box-shadow: 0 1rem 2rem var(--color-shadow);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  appearance: none;
-  border: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 0.88rem;
-  background-color: var(--color-white);
-  user-select: none;
-  overflow-x: hidden;
-  color: var(--color-dark);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.88rem;
+    background-color: var(--color-white);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
 }
 
 main {
-  padding: 40px 100px 0 160px;
+    padding: 40px 100px 0 160px;
 }
 
 a {
-  color: var(--color-dark);
+    color: var(--color-dark)
 }
 
 img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 }
 
 h1 {
-  font-weight: 800;
-  font-size: 1.8rem;
+    font-weight: 800;
+    font-size: 1.8rem;
 }
 
 h2 {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 h3 {
-  font-size: 0.87rem;
+    font-size: 0.87rem;
 }
 
 h4 {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 h5 {
-  font-size: 0.77rem;
+    font-size: 0.77rem;
 }
 
 small {
-  font-size: 0.75rem;
+    font-size: 0.75rem;
 }
 
 h5 {
-  font-size: 0.77rem;
+    font-size: 0.77rem;
 }
 
 small {
-  font-size: 0.75rem;
+    font-size: 0.75rem;
 }
