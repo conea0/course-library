@@ -1,12 +1,12 @@
 import ReactMarkdown from 'react-markdown';
-import markdownBoxStyle from './markdownBox.module.css'
+import problemBoxStyle from './problemBox.module.css'
 import { getProblem } from '@/feature/problem/getProblem';
 import 'github-markdown-css/github-markdown-light.css';
 
-export const ProblemCard = () => {
-  const markdown = getProblem(0,0,0).statement;
+export const ProblemBox = ({part, unit, id}: {part: number, unit: number, id: number}) => {
+  const markdown = getProblem(part,unit,id).statement;
   return (
-    <article className={markdownBoxStyle.cardbox}>
+    <article className={problemBoxStyle.problemBox}>
       <ReactMarkdown className="markdown-body">
           {markdown}
       </ReactMarkdown>
