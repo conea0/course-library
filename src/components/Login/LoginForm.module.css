@@ -1,27 +1,37 @@
+.login {
+  max-width: 600px;
+  padding-top: 25vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .company {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0;
   padding: 0;
-  color: #1f2525; 
+  color: var(--color-dark);
+  text-align: center;
 }
 
 .appName {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 50px;
+  font-size: 1.2rem;
+  margin: 2rem auto;
   padding: 0;
-  color: #434c4c; 
+  color: var(--color-info-dark);
+  text-align: center;
 }
 
 .loginForm {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 60px;
-  border: 1px solid #2e38382a; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  width: 100%;
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+  background: var(--color-white);
+  border-radius: var(--border-radius-2);
+  transition: all 0.3s ease;
+}
+
+.loginForm:hover {
+  box-shadow: none;
 }
 
 /* フォームアイテムのスタイリング */
@@ -32,12 +42,14 @@
 /* ログインボタンのスタイリング */
 .loginForm .loginButton {
   width: 100%;
-  background-color: #1F2525; 
-  color: #ffffff;
+  background-color: var(--color-dark);
+  color: var(--color-white);
   border: none;
+  transition: all 0.3s ease;
 }
 
 /* ログインボタンのホバー時のスタイリング */
 .loginForm .loginButton:hover {
-  background-color: #2E3838; 
+  background-color: var(--color-info-dark) !important;
+  opacity: 0.6;
 }

@@ -1,11 +1,13 @@
-"use client"
 import './globals.css'; // アプリケーションのスタイルをインポート
-import LoginForm from './components/Login/LoginForm';
+import { LoginForm } from '@/components/Login/LoginForm';
+import StudentListPage from './components/StudentForm/StudentListPage';
+
 
 export default function Home() {
   return (
-    <div className="App">
-      <LoginForm/>
+    <div>
+      <LoginForm />
+      <StudentListPage />
     </div>
   );
 }
