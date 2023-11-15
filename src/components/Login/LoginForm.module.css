@@ -1,0 +1,55 @@
+.login {
+  max-width: 600px;
+  padding-top: 25vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.company {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  color: var(--color-dark);
+  text-align: center;
+}
+
+.appName {
+  font-size: 1.2rem;
+  margin: 2rem auto;
+  padding: 0;
+  color: var(--color-info-dark);
+  text-align: center;
+}
+
+.loginForm {
+  width: 100%;
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+  background: var(--color-white);
+  border-radius: var(--border-radius-2);
+  transition: all 0.3s ease;
+}
+
+.loginForm:hover {
+  box-shadow: none;
+}
+
+/* フォームアイテムのスタイリング */
+.loginForm .ant-form-item {
+  margin-bottom: 15px;
+}
+
+/* ログインボタンのスタイリング */
+.loginForm .loginButton {
+  width: 100%;
+  background-color: var(--color-dark); 
+  color: var(--color-white);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* ログインボタンのホバー時のスタイリング */
+.loginForm .loginButton:hover {
+  background-color: var(--color-info-dark) !important;
+  opacity: 0.6;
+}
