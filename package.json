@@ -31,20 +31,18 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/js-yaml": "^4.0.9"
-  }
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
-      "eslint --fix"
-    ]
-  },
-  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "description": "",
   "main": "next.config.js",
