@@ -1,13 +1,9 @@
-import { ProblemBox } from '@/components/problemBox/problemBox';
-import './globals.css'; // アプリケーションのスタイルをインポート
-import { LoginForm } from '@/components/Login/LoginForm';
+import { ProblemBox } from "@/components/problemBox/problemBox";
+import { problemProps } from "@/types";
+import "./globals.css"; // アプリケーションのスタイルをインポート
+import { LoginForm } from "@/components/Login/LoginForm";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div>
-      {/* <LoginForm /> */}
-      <ProblemBox part={0} unit={0} id={0} />
-
-    </div>
-  );
+  return <LoginForm />;
 }
