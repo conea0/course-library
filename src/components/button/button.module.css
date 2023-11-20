@@ -1,0 +1,6 @@
+.button {
+    background-color: var(--color-info-dark);
+    color: var(--color-white);  
+    padding: 0.5rem;
+    border-radius: var(--border-radius-1);
+}
