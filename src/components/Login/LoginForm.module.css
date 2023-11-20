@@ -42,7 +42,7 @@
 /* ログインボタンのスタイリング */
 .loginForm .loginButton {
   width: 100%;
-  background-color: var(--color-dark); 
+  background-color: var(--color-dark);
   color: var(--color-white);
   border: none;
   transition: all 0.3s ease;
