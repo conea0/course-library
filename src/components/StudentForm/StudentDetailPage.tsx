@@ -1,7 +1,7 @@
 //生徒の詳細情報を表示するページ
 "use client";
 import { FC, useState } from "react";
-import { Student } from "@/../../types";
+import { Student } from "@/types/student.type";
 import styles from "./StudentDetailPage.module.css";
 
 interface StudentDetailPageProps {

@@ -1,7 +1,7 @@
 // 生徒一覧のアイテム
 "use client";
 import { FC } from "react";
-import { Student } from "../../../../types";
+import { Student } from "@/types/student.type";
 import styles from "./StudentListItem.module.css";
 
 interface StudentListItemProps {

@@ -1,17 +1,39 @@
 "use client";
-import { FC, useState } from "react";
+import React, { FC, useState } from "react";
 import StudentListItem from "./StudentListItem";
 import StudentDetailPage from "./StudentDetailPage";
 import StudentAddFormPage from "./StudentAddFormPage";
-import { Student } from "../../../../types";
+import { Student } from "@/types/student.type";
 import styles from "./StudentListPage.module.css";
+import CourseProgress from "./CourseProgress";
 
 const studentsData: Student[] = [
-  { id: "1", name: "John Doe", username: "john_doe", contact: "123-456-7890" },
-  { id: "2", name: "Jane Doe", username: "jane_doe", contact: "987-654-3210" },
-  { id: "3", name: "Abc Def", username: "aaaaaaaaa", contact: "012-346-6789" },
-  { id: "4", name: "Ghi Jkl", username: "bbbbbbbbb", contact: "135-246-7890" },
-  // 必要に応じて他の生徒を追加
+  {
+    id: "1",
+    name: "John Doe",
+    username: "john_doe",
+    contact: "123-456-7890",
+    progressData: [
+      {
+        id: 1,
+        courseName: "Python",
+        progress: 50,
+        completedUnits: [1, 2],
+      },
+      { id: 2, courseName: "C#", progress: 75, completedUnits: [1] },
+    ],
+  },
+  {
+    id: "2",
+    name: "Jane Doe",
+    username: "jane_doe",
+    contact: "987-654-3210",
+    progressData: [
+      { id: 3, courseName: "Python", progress: 30, completedUnits: [] },
+      { id: 4, courseName: "C#", progress: 60, completedUnits: [1, 2] },
+    ],
+  },
+  // Add more students with progress data
 ];
 
 const StudentListPage: FC = () => {
@@ -20,12 +42,10 @@ const StudentListPage: FC = () => {
 
   const handleStudentClick = (student: Student) => {
     setSelectedStudent(student);
-    // クリックされた生徒の id をセットしていますが、実際のアプリケーションによっては別の識別子が必要かもしれません
     setSelectedButton(student.id);
   };
 
   const handleAddStudent = (newStudent: Student) => {
-    // データベースに新しい生徒を追加するロジックを実装
     console.log("新しい生徒を追加:", newStudent);
   };
 
@@ -39,12 +59,24 @@ const StudentListPage: FC = () => {
         <div className={styles.mark}></div>
         <div className={styles.studentList}>
           {studentsData.map((student) => (
-            <StudentListItem
-              key={student.id}
-              student={student}
-              selected={selectedButton === student.id}
-              onClick={() => handleStudentClick(student)}
-            />
+            <div key={student.id}>
+              <StudentListItem
+                student={student}
+                selected={selectedButton === student.id}
+                onClick={() => handleStudentClick(student)}
+              />
+              {selectedStudent && selectedStudent.id === student.id && (
+                <div className={styles.courseProgress}>
+                  <h2>{`${student.name}の学習の進捗率`}</h2>
+                  {student.progressData.map((progress, index) => (
+                    <div key={index}>
+                      <h3>{`${progress.courseName}の進捗率`}</h3>
+                      <CourseProgress studentProgress={progress} />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>

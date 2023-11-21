@@ -2,7 +2,7 @@
 "use client";
 import { FC } from "react";
 import StudentForm from "./StudentForm";
-import { Student } from "@/../../types";
+import { Student } from "@/./types/student.type";
 import styles from "./StudentAddFormPage.module.css";
 
 interface StudentAddFormPageProps {
