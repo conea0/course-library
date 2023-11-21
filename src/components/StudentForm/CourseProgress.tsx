@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import styles from "./CourseProgress.module.css";
 
 interface StudentProgress {
@@ -19,7 +19,7 @@ const CourseProgress: React.FC<CourseProgressProps> = ({ studentProgress }) => {
 
   const isCourseCompleted = completedUnits.length === totalUnits;
   const progressBarStyle = {
-    width: isCourseCompleted ? '100%' : `${progress}%`,
+    width: isCourseCompleted ? "100%" : `${progress}%`,
   };
 
   const handleDetailsClick = () => {
@@ -35,11 +35,19 @@ const CourseProgress: React.FC<CourseProgressProps> = ({ studentProgress }) => {
     <div className={styles.courseBox}>
       <div className={styles.courseHeader}>
         <h2>{courseName}</h2>
-        <button onClick={handleDetailsClick}>{showDetails ? '非表示' : '詳細'}</button>
+        <button onClick={handleDetailsClick}>
+          {showDetails ? "非表示" : "詳細"}
+        </button>
       </div>
-      <div className={`${styles.progressBar} ${isCourseCompleted && styles.completed}`}>
+      <div
+        className={`${styles.progressBar} ${
+          isCourseCompleted && styles.completed
+        }`}
+      >
         <div className={styles.progress} style={progressBarStyle}>
-          {isCourseCompleted && <div className={styles.completedMarker}>完了</div>}
+          {isCourseCompleted && (
+            <div className={styles.completedMarker}>完了</div>
+          )}
         </div>
       </div>
       {showDetails && (

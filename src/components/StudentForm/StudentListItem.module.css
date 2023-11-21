@@ -10,7 +10,9 @@
   margin-bottom: 0.2rem;
   border-left: 10px solid;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .listItem:hover,
