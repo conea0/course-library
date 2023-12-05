@@ -1,20 +1,4 @@
 import type { Student } from "./student.type";
+import type { Part, Testcase, Unit, problem, problemProps } from "./study.type";
 
-export type { Student };
-
-export type problem = {
-  statement: string;
-  testcase: Testcase;
-  code: string;
-};
-
-export type Testcase = {
-  input: string[];
-  output: string;
-};
-
-export type problemProps = {
-  part: number;
-  unit: number;
-  id: number;
-};
+export type { Part, Student, Testcase, Unit, problem, problemProps };
