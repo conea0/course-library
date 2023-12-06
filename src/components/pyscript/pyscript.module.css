@@ -1,0 +1,13 @@
+.problemBox {
+    margin: 3rem 0 2rem 0;
+    padding: 2rem;   
+    opacity: 0.8;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-1);
+    transition: all 0.2s ease;
+}
+
+.problemBox:hover {
+    box-shadow: none;
+    opacity: 1;
+}
