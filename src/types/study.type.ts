@@ -1,6 +1,6 @@
-export type problem = {
+export type Problem = {
 	statement: string;
-	testcase: Testcase;
+	testcase: Testcase[];
 	code: string;
 };
 
@@ -10,20 +10,25 @@ export type Testcase = {
 };
 
 export type problemProps = {
+	id: number;
+	completed: boolean;
+	invalid: boolean;
+	submitted: boolean;
 	part: number;
 	unit: number;
-	id: number;
+	problemNumber: number;
 };
 
-export interface Part {
-	id: string;
-	name: string;
+export interface PartProps {
+	id: number;
+	partNumber: number;
 	status: number;
 }
 
-export interface Unit {
-	id: string;
+export interface UnitProps {
+	id: number;
 	name: string;
+	unitNumber: number;
+	problemCount: number;
 	status: number;
-	partId: string;
 }
