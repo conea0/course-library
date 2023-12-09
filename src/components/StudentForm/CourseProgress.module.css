@@ -1,0 +1,45 @@
+.courseBox {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.courseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  height: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.completed {
+  background-color: #8bc34a;
+}
+
+.completedMarker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+}
+
+.progressDetails {
+  margin-top: 10px;
+}
+
+/* Add any additional styling as needed */
