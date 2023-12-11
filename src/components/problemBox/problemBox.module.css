@@ -1,6 +1,6 @@
 .problemBox {
-    margin: 3rem 0 2rem 0;
-    padding: 2rem;   
+    padding: 2rem;
+    margin-top: 1rem;
     opacity: 0.8;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-1);
