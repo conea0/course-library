@@ -48,6 +48,8 @@ body {
 
 main {
     padding: 40px 100px 0 160px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
 }
 
 a {
