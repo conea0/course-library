@@ -1,15 +1,22 @@
 import MyPageStyle from "@/components/MyPage/MyPage.module.css";
-import {Heading} from "@/components/heading/heading";
-import {ListButton} from "@/components/ListButton/ListButton";
+import {MyPageListButton} from "@/components/MyPage/MyPageListButton/MyPageListButton";
 
-export const MyPageSection = ({title, subtitle}: {title: string, subtitle: string}) => {
+export const MyPageSection = ({title, sideNumbers, sectionColor}: {
+    title: string,
+    sideNumbers: string,
+    sectionColor: string
+}) => {
     return (
         <div className={MyPageStyle.section}>
-            <Heading subtitle={subtitle}>{title}</Heading>
+            <div className={MyPageStyle.above}>
+                <div className={MyPageStyle.title} style={{background: sectionColor}}>{title}</div>
+                <div className={MyPageStyle.sideNumbers}>{sideNumbers}</div>
+            </div>
+
             <div className={MyPageStyle.list}>
-                <ListButton url={"/"}>Unit1</ListButton>
-                <ListButton url={"/"}>Unit2</ListButton>
-                <ListButton url={"/"}>Unit3</ListButton>
+                <MyPageListButton url={"/"} progress={99} part={"Part01"} name={"プログラミング概説"} image={""} />
+                <MyPageListButton url={"/"} progress={66} part={"Part01"} name={"プログラミング概説"} image={""} />
+                <MyPageListButton url={"/"} progress={33} part={"Part01"} name={"プログラミング概説"} image={""} />
             </div>
         </div>
     )
