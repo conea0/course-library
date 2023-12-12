@@ -6,6 +6,7 @@ import { RightButtons } from "./rightButtons/rightButtons";
 import HintImage from '/public/images/hint-b.svg';
 import RunImage from '/public/images/run-b.svg';
 import SubmitImage from '/public/images/submit-b.svg';
+import { PageChangegButton } from "@/components/pageChangeButton/pageChangeButton";
 
 export const ProblemPage =() =>{
   const hoge = {
@@ -31,6 +32,7 @@ export const ProblemPage =() =>{
   return (
     <div className={ProblemPageStyle.content}>
       <div className={ProblemPageStyle.left}>
+        <PageChangegButton />
         <Heading subtitle="Part1 / Pythonの基本文法について学ぼう">Print文について学ぼう</Heading>
         <h2>問題</h2>
         <ProblemBox problemProps={hoge} />
