@@ -1,9 +1,5 @@
 .button {
-    /* background-color: var(--color-dark50); */
-    color: var(--color-ifno-dark);
-    /* color: var(--color-white); */
-    padding: 0.5rem;
-    border-radius: var(--border-radius-1);
+    padding: 0.4rem;
     transition: all 0.1s ease;
     font-size: 0.8rem;
 }

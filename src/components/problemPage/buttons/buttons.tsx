@@ -1,14 +1,14 @@
-import rightButtonsStyle from './rightButtons.module.css';
+import ButtonsStyle from './buttons.module.css';
 import Image from 'next/image'
 
-export const RightButtons = (props: { buttons: any[]; }) => {
+export const Buttons = (props: { buttons: any[]; }) => {
     return (
-        <div className={rightButtonsStyle.buttons}>
+        <div className={ButtonsStyle.buttons}>
             <ul>
             {props.buttons.map((item) => {
                 return (
                     <li>
-                        <Image className={rightButtonsStyle.icon} src={item.path} alt={item.text}></Image>
+                        <Image className={ButtonsStyle.icon} src={item.path} alt={item.text}></Image>
                         <span>{item.text}</span>
                     </li>
                 );
