@@ -5,9 +5,9 @@ export const Buttons = (props: { buttons: any[]; }) => {
     return (
         <div className={ButtonsStyle.buttons}>
             <ul>
-            {props.buttons.map((item) => {
+            {props.buttons.map((item, index) => {
                 return (
-                    <li>
+                    <li key={index}>
                         <Image className={ButtonsStyle.icon} src={item.path} alt={item.text}></Image>
                         <span>{item.text}</span>
                     </li>

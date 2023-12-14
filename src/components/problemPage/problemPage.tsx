@@ -19,8 +19,6 @@ export const ProblemPage =() =>{
           <Heading subtitle="Part1 / Pythonの基本文法について学ぼう">Print文について学ぼう</Heading>
           <h2>問題</h2>
           <ProblemBox problemProps={hoge} />
-          <h2>解説</h2>
-          <ProblemBox problemProps={hoge} />
         </div>
         <div className={ProblemPageStyle.right}>
           <h3>コード</h3>

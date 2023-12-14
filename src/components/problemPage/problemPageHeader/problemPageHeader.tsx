@@ -5,7 +5,7 @@ import NextPageImage from '/public/images/nextpage-b.svg';
 import HintImage from '/public/images/hint-b.svg';
 import RunImage from '/public/images/run-b.svg';
 import SubmitImage from '/public/images/submit-b.svg';
-import { PageChangegButton } from "@/components/pageChangeButton/pageChangeButton";
+import { PageChangeButton } from "@/components/pageChangeButton/pageChangeButton";
 
 export const ProblemPageHeader =() =>{
   const elementsR = [
@@ -25,7 +25,7 @@ export const ProblemPageHeader =() =>{
   return (
     <div className={ProblemPageHeaderStyle.header}>
         <div>
-            <PageChangegButton />
+            <PageChangeButton />
         </div>
         <div>
             <Buttons buttons={elementsR}/>
