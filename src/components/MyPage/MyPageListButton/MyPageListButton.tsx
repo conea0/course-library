@@ -12,7 +12,7 @@ export const MyPageListButton = ({url, progress, image, part, name}: {
     return (
         <Link href={url} className={MyPageListButtonStyle.wrapper}>
             <div className={MyPageListButtonStyle.left}>
-                <img src={image} alt="" className={MyPageListButtonStyle.image}/>
+                <span>1</span>
             </div>
             <div className={MyPageListButtonStyle.center}>
                 <div className={MyPageListButtonStyle.part}>{part}</div>

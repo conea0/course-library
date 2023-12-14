@@ -1,19 +1,21 @@
 .wrapper {
-    transition: all 0.3s ease;
+    background: var(--color-white);
+    color: var(--color-gray-variant);
 
-    height: 4.5rem;
+    height: 5rem;
     position: relative;
-    padding: 0.45rem;
+    padding: 0.6rem 1rem;
 
     display: flex;
     justify-content: space-between;
     align-content: stretch;
 
-    border: var(--color-dark-variant) 1px solid;
-    border-radius: 0.3rem;
+    border: var(--color-gray) 1px solid;
+    border-radius: var(--border-radius-1);
 }
 
 .wrapper:hover {
+    border: var(--color-gray) 2px solid;
     box-shadow: var(--box-shadow);
 }
 
@@ -23,7 +25,14 @@
     width: auto;
     flex-basis: auto;
     margin-right: 1rem;
-    border-radius: 0.75rem;
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-gray-variant);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 1.4rem;
 }
 
 .center {
@@ -50,6 +59,7 @@
 }
 
 .part {
+    line-height: 1.5rem;
     font-size: 0.9rem;
 
 }
