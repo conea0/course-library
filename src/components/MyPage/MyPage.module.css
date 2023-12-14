@@ -1,0 +1,66 @@
+.pageWrapper {
+    height: calc(100svh - 120px);
+    margin-bottom: 40px;
+}
+
+.sectionsWrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    grid-template-columns: 50% 50%;
+    column-gap: 4rem;
+    row-gap: 5rem;
+    column-count: 2;
+    padding: 1rem 10% 1rem 1rem;
+}
+
+.above {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+
+}
+
+.title {
+    border-radius: 0.25rem;
+    color: white;
+    text-align: center;
+    width: 50%;
+    max-width: 15rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.1rem;
+}
+
+.sideNumbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    max-width: 8rem;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background: #F4FAFF;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 0 1rem 1rem
+}
+
+.list > * {
+    margin-top: 2rem;
+    width: 100%;
+}
