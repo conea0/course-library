@@ -2,8 +2,7 @@
 import { usePython } from 'react-py';
 import {useRef, useState} from 'react';
 
-export default function Codeblock() {
-    const [input, setInput] = useState('')
+export default function Codeblock({inputCode}:{inputCode:string}) {
     const userStdInput = useRef("")
     const { runPython, stdout, stderr, isLoading, isRunning, isAwaitingInput , sendInput} = usePython()
   
@@ -11,17 +10,17 @@ export default function Codeblock() {
         <div>
             {isLoading ? <p>Loading...</p> : <p></p>}
             <form>
-                <textarea
+                {/* <textarea
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Enter your code here"
-                />
+                /> */}
                 <input
                 type="submit"
                 value={!isRunning ? 'Run' : 'Running...'}
                 disabled={isLoading || isRunning}
                 onClick={(e) => {
                     e.preventDefault()
-                    runPython(input)
+                    runPython(inputCode)
                 }}
                 />
             </form>

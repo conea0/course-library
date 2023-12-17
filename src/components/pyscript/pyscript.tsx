@@ -3,7 +3,7 @@ import {PythonProvider} from 'react-py'
 import Codeblock from './codeBlock';
 import {useEffect} from "react";
 
-export const Pyscript = () => {
+export const Pyscript = ({inputCode}:{inputCode:string}) => {
 
     useEffect(() => {
         navigator.serviceWorker
@@ -19,7 +19,7 @@ export const Pyscript = () => {
 
     return (
         <PythonProvider>
-            <Codeblock/>
+            <Codeblock inputCode={inputCode}/>
         </PythonProvider>
     )
 }
