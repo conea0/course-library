@@ -1,0 +1,14 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.buttons {
+    display: flex;
+        justify-content: flex-end;
+}
+
+.buttons ul {
+    display: flex;
+}

@@ -1,10 +1,7 @@
 .button {
-    background-color: var(--color-info-dark);
-    color: var(--color-white);  
-    padding: 0.5rem;
-    border-radius: var(--border-radius-1);
+    padding: 0.4rem;
     transition: all 0.1s ease;
-    line-height: 2.5rem;
+    font-size: 0.8rem;
 }
 
 .button:hover {

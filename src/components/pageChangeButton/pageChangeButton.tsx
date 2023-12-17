@@ -1,7 +1,7 @@
 import { Button } from '@/components/button/button';
 import pageChangeButtonStyle from "./pageChangeButton.module.css"
 
-export const PageChangegButton = () => {
+export const PageChangeButton = () => {
     return (
       <div className={pageChangeButtonStyle.pageChangeButton}>
         <Button text='＜前の問題' />

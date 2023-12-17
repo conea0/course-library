@@ -1,0 +1,19 @@
+.buttons  {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.buttons ul {
+    display: flex;
+}
+
+.buttons ul li {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.buttons ul li span{
+    width: 70px;
+}
