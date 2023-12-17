@@ -1,0 +1,27 @@
+.formContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.label {
+  color: #1f2525;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.button {
+  background-color: #1f2525;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #2e3838;
+}
