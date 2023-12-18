@@ -1,10 +1,11 @@
 import MyPageStyle from "@/components/MyPage/MyPage.module.css";
-import {MyPageListButton} from "@/components/MyPage/MyPageListButton/MyPageListButton";
+import {MyPageListButton, ProblemLinkProps} from "@/components/MyPage/MyPageListButton/MyPageListButton";
 
-export const MyPageSection = ({title, sideNumbers, sectionColor}: {
+export const MyPageSection = ({title, sideNumbers, sectionColor, listItems}: {
     title: string,
     sideNumbers: string,
-    sectionColor: string
+    sectionColor: string,
+    listItems: ProblemLinkProps[]
 }) => {
     return (
         <div className={MyPageStyle.section}>
@@ -14,9 +15,9 @@ export const MyPageSection = ({title, sideNumbers, sectionColor}: {
             </div>
 
             <div className={MyPageStyle.list}>
-                <MyPageListButton url={"/"} progress={99} part={"Part01"} name={"プログラミング概説"} image={""} />
-                <MyPageListButton url={"/"} progress={66} part={"Part01"} name={"プログラミング概説"} image={""} />
-                <MyPageListButton url={"/"} progress={33} part={"Part01"} name={"プログラミング概説"} image={""} />
+                {listItems.map((item, index) => {
+                    return <MyPageListButton {...item} index={index + 1} key={index}/>
+                })}
             </div>
         </div>
     )
