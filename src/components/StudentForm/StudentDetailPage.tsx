@@ -1,13 +1,14 @@
+/* eslint no-unused-vars: 0 */
 //生徒の詳細情報を表示するページ
 "use client";
-import { FC, useState } from "react";
 import { Student } from "@/types/student.type";
+import { FC, useState } from "react";
+import React from "react";
 import styles from "./StudentDetailPage.module.css";
 
 interface StudentDetailPageProps {
   student: Student;
 }
-
 const StudentDetailPage: FC<StudentDetailPageProps> = ({ student }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedStudent, setEditedStudent] = useState<Student>({ ...student });

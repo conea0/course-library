@@ -1,3 +1,4 @@
+/* eslint no-unused-vars: 0 */
 // 生徒情報のフォーム
 "use client";
 import { FC, useState, ChangeEvent, FormEvent } from "react";

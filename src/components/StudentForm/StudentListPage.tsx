@@ -1,11 +1,10 @@
 "use client";
-import React, { FC, useState } from "react";
-import StudentListItem from "./StudentListItem";
-import StudentDetailPage from "./StudentDetailPage";
-import StudentAddFormPage from "./StudentAddFormPage";
 import { Student } from "@/types/student.type";
+import { FC, useState } from "react";
+import StudentAddFormPage from "./StudentAddFormPage";
+import StudentDetailPage from "./StudentDetailPage";
+import StudentListItem from "./StudentListItem";
 import styles from "./StudentListPage.module.css";
-import CourseProgress from "./CourseProgress";
 
 const studentsData: Student[] = [
   {
@@ -71,7 +70,7 @@ const StudentListPage: FC = () => {
                   {student.progressData.map((progress, index) => (
                     <div key={index}>
                       <h3>{`${progress.courseName}の進捗率`}</h3>
-                      <CourseProgress studentProgress={progress} />
+                      {/* <CourseProgress studentProgress={progress} /> */}
                     </div>
                   ))}
                 </div>

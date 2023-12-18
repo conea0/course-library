@@ -1,4 +1,4 @@
-// 生徒情報の追加ページ
+/* eslint no-unused-vars: 0 */
 "use client";
 import { FC } from "react";
 import StudentForm from "./StudentForm";
