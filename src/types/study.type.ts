@@ -1,4 +1,4 @@
-export type problem = {
+export type Problem = {
 	statement: string;
 	testcase: Testcase;
 	code: string;
@@ -9,21 +9,26 @@ export type Testcase = {
 	output: string;
 };
 
-export type problemProps = {
-	part: number;
-	unit: number;
+export type ProblemProps = {
 	id: number;
+	completed: boolean;
+	invalid: boolean;
+	submitted: boolean;
+	partNumber: number;
+	unitNumber: number;
+	problemNumber: number;
 };
 
-export interface Part {
-	id: string;
-	name: string;
-	status: number;
+export interface PartProps {
+	id: number;
+	partNumber: number;
+	status: number; // 0〜100で進捗率を返す
 }
 
-export interface Unit {
-	id: string;
+export interface UnitProps {
+	id: number;
 	name: string;
+	unitNumber: number;
+	problemCount: number;
 	status: number;
-	partId: string;
 }

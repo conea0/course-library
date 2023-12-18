@@ -1,11 +1,11 @@
-import { problem } from "@/types";
+import { Problem } from "@/types";
 import { readFileSync } from "fs";
 import { load } from "js-yaml";
 import { resolve } from "path"; 
 
-const example: problem = load(
+const example: Problem = load(
   readFileSync(resolve("src/feature/problem/problem.yaml"), "utf8")
-) as problem;
+) as Problem;
 const data = [
   [
     [
@@ -17,7 +17,7 @@ const data = [
     ],
   ],
 ];
-export const getProblem = (part: number, unit: number, id: number): problem => {
+export const getProblem = (part: number, unit: number, id: number): Problem => {
     return(
         data[part][unit][id]
     );

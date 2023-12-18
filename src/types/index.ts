@@ -1,4 +1,4 @@
 import type { Student } from "./student.type";
-import type { Part, Testcase, Unit, problem, problemProps } from "./study.type";
+import type { PartProps, Testcase, UnitProps, Problem, ProblemProps } from "./study.type";
 
-export type { Part, Student, Testcase, Unit, problem, problemProps };
+export type { PartProps, Student, Testcase, UnitProps, Problem, ProblemProps };
