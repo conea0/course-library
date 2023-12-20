@@ -1,11 +1,11 @@
 'use client';
-import { usePython } from 'react-py';
-import {useRef, useState} from 'react';
+import {usePython} from 'react-py';
+import {useRef} from 'react';
 
-export default function Codeblock({inputCode}:{inputCode:string}) {
+export default function Codeblock({inputCode}: { inputCode: string }) {
     const userStdInput = useRef("")
-    const { runPython, stdout, stderr, isLoading, isRunning, isAwaitingInput , sendInput} = usePython()
-  
+    const {runPython, stdout, stderr, isLoading, isRunning, isAwaitingInput, sendInput} = usePython()
+
     return (
         <div>
             {isLoading ? <p>Loading...</p> : <p></p>}
@@ -15,13 +15,13 @@ export default function Codeblock({inputCode}:{inputCode:string}) {
                 placeholder="Enter your code here"
                 /> */}
                 <input
-                type="submit"
-                value={!isRunning ? 'Run' : 'Running...'}
-                disabled={isLoading || isRunning}
-                onClick={(e) => {
-                    e.preventDefault()
-                    runPython(inputCode)
-                }}
+                    type="submit"
+                    value={!isRunning ? 'Run' : 'Running...'}
+                    disabled={isLoading || isRunning}
+                    onClick={(e) => {
+                        e.preventDefault()
+                        runPython(inputCode)
+                    }}
                 />
             </form>
 
@@ -51,5 +51,5 @@ export default function Codeblock({inputCode}:{inputCode:string}) {
             </pre>
         </div>
     )
-  }
+}
   
