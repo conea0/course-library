@@ -13,6 +13,7 @@ export default function Problems({
     unit: Number(params.part),
     id: Number(searchParams.id),
   };
+
   return (
     <div>
       <ProblemBox problemProps={example} />
