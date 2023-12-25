@@ -1,4 +1,5 @@
 import { ProblemBox } from "@/components/problemBox/problemBox";
+import getTextContent from "@/feature/content/getTextcontent";
 import { problemProps } from "@/types";
 
 export default function Problems({
@@ -13,6 +14,9 @@ export default function Problems({
     unit: Number(params.part),
     id: Number(searchParams.id),
   };
+
+  const text = getTextContent(1, 2);
+  console.log(text);
 
   return (
     <div>
